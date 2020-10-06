@@ -1,0 +1,21 @@
+@import 'color-pallete';
+
+%btn {
+    text-decoration: none;
+    border-radius:50px;
+    padding: 8px 16px 8px 16px;
+    color:white;
+    -webkit-box-shadow: 9px 10px 19px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 9px 10px 19px 0px rgba(0,0,0,0.21);
+    box-shadow: 9px 10px 19px 0px rgba(0,0,0,0.21);
+}
+
+.btn-main {
+    @extend %btn;
+    background-image:linear-gradient(to left, $cyan, $lime);
+}
+
+.changeBg {
+    background-color:$darkBlue !important;
+}
+

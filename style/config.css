@@ -1,0 +1,18 @@
+.btn-main {
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 8px 16px 8px 16px;
+  color: white;
+  -webkit-box-shadow: 9px 10px 19px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 9px 10px 19px 0px rgba(0, 0, 0, 0.21);
+}
+
+.btn-main {
+  background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background-image: linear-gradient(to left, #2bb7da, #31d35c);
+}
+
+.changeBg {
+  background-color: #2d314d !important;
+}
+/*# sourceMappingURL=config.css.map */

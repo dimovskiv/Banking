@@ -1,0 +1,143 @@
+@import 'color-pallete';
+@import 'config';
+
+$font:font;
+
+@font-face {
+    font-family: font;
+    src: url(/fonts/Poppins-Regular.ttf);
+  }
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body,html {
+    height:100%;
+    font-family:font;
+}
+
+.navigation-mobile {
+    height:100%;
+    width:100%;
+    background-color:$darkBlue;
+    display:none;
+    position:fixed;
+    top:0;
+    z-index:301;
+
+    .logo-nav {
+        position:absolute;
+        top:1.9rem;
+        left:13px;
+    }
+    
+    .navigaton-wrapper {
+        height:100%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+    
+
+            a {
+                text-decoration: none;
+                color:white;
+                margin:10px;
+            }
+
+    }
+}
+
+.navigation-mobile-open {
+    width:35px;
+    height:35px;
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    border-radius:50%;
+    background-image: linear-gradient(to top, $lime, $cyan);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:302;
+    
+        .fa-bars {
+            color:white !important;
+        }
+}
+
+.header {
+    background-color:white;
+    height:10%;
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+   
+        .sub {
+            width:50%;
+            height:100%;
+            display:flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left:1rem;
+              
+        }
+
+        .button {
+            justify-content: flex-end !important;
+            padding-right:1rem;
+        }
+
+
+}
+
+.master-header {
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    background-image:url("/img/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    //background optimization
+    align-items: center;
+    justify-content: center;
+    
+        .sub {
+            height:50%;
+            display:flex;
+            flex-direction:column;
+            text-align: center;
+            justify-content:flex-start;
+            align-items:center;
+            width:80%;
+            
+            
+        }
+
+        .text {
+            p {
+                line-height: 1.8;
+                margin-top:1rem;
+            }
+            width:80%;
+        }
+}
+
+p {
+    font-size:16px;
+    text-align: left;
+    opacity:0.8;
+    color:$darkBlue;
+}
+
+h1 {
+    font-size:22px;
+    text-align: left;
+    color:$darkBlue;
+}
