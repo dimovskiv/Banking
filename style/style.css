@@ -69,6 +69,7 @@ body, html {
   text-decoration: none;
   color: white;
   margin: 10px;
+  font-size: 22px;
 }
 
 .navigation-mobile-open {
@@ -90,6 +91,8 @@ body, html {
       -ms-flex-align: center;
           align-items: center;
   z-index: 302;
+  -webkit-box-shadow: 9px -7px 19px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 9px -7px 19px 0px rgba(0, 0, 0, 0.21);
 }
 
 .navigation-mobile-open .fa-bars {
@@ -109,6 +112,7 @@ body, html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  z-index: 301;
 }
 
 .header .sub {
@@ -151,6 +155,19 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #f3f4f6;
+}
+
+.master-header .img {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  background-image: url("/img/image-mockups.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 200;
 }
 
 .master-header .sub {
@@ -163,13 +180,14 @@ body, html {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 1rem;
+  padding-bottom: 3.5rem;
 }
 
 .master-header .text {
@@ -182,7 +200,7 @@ body, html {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   opacity: 0.8;
   color: #2d314d;
