@@ -5,6 +5,7 @@
   color: white;
   -webkit-box-shadow: 9px 10px 19px 0px rgba(0, 0, 0, 0.21);
   box-shadow: 9px 10px 19px 0px rgba(0, 0, 0, 0.21);
+  font-size: 16px;
 }
 
 .btn-main {
@@ -14,5 +15,18 @@
 
 .changeBg {
   background-color: #2d314d !important;
+}
+
+.dark-mode {
+  background-color: #222222;
+}
+
+.link-main {
+  text-decoration: none;
+  color: #2d314d;
+}
+
+.link-main {
+  font-size: 22px;
 }
 /*# sourceMappingURL=config.css.map */

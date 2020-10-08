@@ -19,6 +19,20 @@
         </div>
         <div class="sub button">
             <a href="#" class="btn-main">Preorder</a>
+            <div class="subD">
+                <div class="link">
+                    <a href="#" class="link-main">About</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="link-main">Services</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="link-main">Donate</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="link-main btn-sec">Contact us</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -35,20 +49,51 @@
         </div>
     </div>
       
-    <div class="master-header">
+    <div class="master-header" id="masthead">
         <div class="img"></div>
-        <div class="sub">
-
+        <div class="sub subDesktop">
+            <div class="imgD"></div>
         </div>
         <div class="sub">
             <div class="text">
                 <h1>Next generation <br/> digital banking</h1>
             </div>
             <div class="text">
-                <p>Take your financial life online. <br/> Your Easybank account will be <br/> a one stop-shop for spending, saving, budgeting, investi  ng, and much more.</p>
+                <p>Take your financial life online. <br/> Your Easybank account will be <br/> a one stop-shop for spending, saving, budgeting, investing, and much more.</p>
+            </div>
+            <div class="text nomob">
+                <a href="#" class="btn-main">Preorder</a>
             </div>
         </div>
+        
     </div>
+
+    <div class="master-header-1" id="masthead">
+
+        <div class="modal" id="modal">
+
+        </div>
+       
+        <div class="sub subDesktop">
+            
+            <div class="text">
+                <img src="img/icon-budgeting.svg" id="openModal">
+                <h1>Budgeting</h1>
+            </div>
+            <div class="text">
+                <img src="img/icon-api.svg">
+                <h1>Open API</h1>
+            </div>
+            <div class="text">
+                <img src="img/icon-online.svg">
+                <h1>Everything online</h1>
+            </div>
+        
+        </div>
+       
+    </div>
+
+
 
 
     
@@ -57,6 +102,28 @@
     })
     
     </script>
+
+        
+<script>$("#openModal").click(function() {
+    $("#modal").slideToggle("fast", function(){  });
+})
+
+</script>
+
+    <script>
+        const btn = document.querySelector('.btn-toggle');
+
+// Listen for a click on the button
+btn.addEventListener('click', function() {
+  // Then toggle (add/remove) the .dark-theme class to the body
+  document.body.classList.toggle('dark-theme');  
+})
+    </script>
+
+    
+
     <script src="fontawesome/all.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     </body>
 </html>

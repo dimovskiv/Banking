@@ -1,5 +1,6 @@
 @import 'color-pallete';
 @import 'config';
+@import 'mediaQueryDesktop';
 
 $font:font;
 
@@ -16,6 +17,10 @@ $font:font;
 body,html {
     height:100%;
     font-family:font;
+}
+
+.nomob {
+    display:none;
 }
 
 .navigation-mobile {
@@ -69,7 +74,10 @@ body,html {
         }
 }
 
+
+
 .header {
+    
     background-color:white;
     height:10%;
     position:fixed;
@@ -78,6 +86,10 @@ body,html {
     display:flex;
     flex-direction:row;
     z-index:301;
+        
+        .subD {
+            display:none;
+        }
    
         .sub {
             width:50%;
@@ -86,6 +98,7 @@ body,html {
             align-items: center;
             justify-content: flex-start;
             padding-left:1rem;
+            position:relative;
               
         }
 
@@ -102,12 +115,14 @@ body,html {
     display:flex;
     flex-direction:column;
     background-image:url("/img/bg-intro-mobile.svg");
+    background-color:$lightGreyishBlue;
     background-repeat: no-repeat;
     background-position: top;
     //background optimization
     align-items: center;
     justify-content: center;
-    background-color:$lightGreyishBlue;
+    
+    
 
         .img {
             position:absolute;
@@ -129,14 +144,17 @@ body,html {
             text-align: center;
             justify-content:center;
             align-items:flex-start;
-            padding-left:1rem;
-            padding-bottom:3.5rem;
+            padding:1rem;
+                .imgD {
+                    display:none;
+                }
+               
         }
 
         .text {
             p {
                 line-height: 1.8;
-                margin-top:1rem;
+                margin-top:10px;
             }
             width:80%;
         }
@@ -154,3 +172,58 @@ h1 {
     text-align: left;
     color:$darkBlue;
 }
+
+.section-two {
+    height:100%;
+}
+
+.master-header-1 {
+
+   
+    .modal {
+        height:100%;
+        width:100%;
+        position:absolute;
+        background-image: linear-gradient(to top, $lime, $cyan);
+        display:none;
+    }
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    background-repeat: no-repeat;
+    background-position: top;
+    //background optimization
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+    
+    
+        .sub {
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:flex-start;
+            width:90%;
+        }
+
+        .text {
+           
+
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height:33.3%;
+
+            h1 {
+                margin-left:10px;
+            }
+            
+
+            
+        }
+
+}
+

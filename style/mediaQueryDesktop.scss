@@ -1,0 +1,141 @@
+@import 'config';
+@import 'color-pallete';
+
+//1281px to higher resolution computers
+
+@media (min-width: 1281px) {
+
+   
+    .btn-main {
+        font-size:25px;
+    }
+    .navigaton-mobile-open {
+        height:1000px;
+    }
+
+    .master-header {
+        
+        flex-direction:row-reverse !important;
+        background:none !important;
+
+        h1 {
+            font-size:45px;
+        }
+
+        p {
+            font-size:16px;
+        }
+
+        .subDesktop {
+            background-image:url(/img/bg-intro-desktop.svg);
+            background-size:cover;
+        }
+        
+
+        .img {
+            display:none;
+        }
+
+        .sub:last-child {
+            padding:5rem;
+        }
+
+        .sub {
+          
+            width:50%;
+            height:100% !important;
+            position:relative;
+           
+
+                .text {
+                    width:60%;
+                    margin:15px;
+
+                        p {
+                            margin-top:none;
+                        }
+                }
+
+                .nomob {
+                    display:flex;
+                }
+
+                .imgD {
+                    display:flex !important;
+                    height:100%;
+                    width:80%;
+                    background-image:url("/img/image-mockups.png") !important;
+                    background-repeat:no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    position:absolute;
+                    right:0;
+                  
+        }
+    }
+    
+  }
+
+  .header {
+
+    
+    
+    position:relative;
+      .sub {
+          padding-left:5rem !important;
+      }
+
+      .button {
+          .btn-main {
+              display:none !important;
+          }
+      }
+
+      .subD {
+          display:flex !important;
+          width:100% !important;
+          justify-content: flex-end !important;
+          align-items:center;
+          padding-right:5rem;
+
+
+
+
+          a {
+              width:25%;
+              margin:20px;
+              position:relative;
+              color:$darkBlue;
+        
+          }
+
+        
+
+          a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            border-radius: 50px;
+            left: 50%;
+            position: absolute;
+            background-image:linear-gradient(to right, $cyan, $lime);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          a:hover:after { 
+            width: 100%; 
+            left: 0;
+          }
+       
+      }
+  }
+
+  .master-header {
+      background-color:$lightGreyishBlue !important;
+  }
+
+  
+}
+  

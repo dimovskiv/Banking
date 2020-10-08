@@ -8,6 +8,7 @@
     -webkit-box-shadow: 9px 10px 19px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 9px 10px 19px 0px rgba(0,0,0,0.21);
     box-shadow: 9px 10px 19px 0px rgba(0,0,0,0.21);
+    font-size:16px;
 }
 
 .btn-main {
@@ -19,3 +20,17 @@
     background-color:$darkBlue !important;
 }
 
+.dark-mode {
+    background-color:#222222;
+}
+
+%link {
+    text-decoration: none;
+    color: $darkBlue;
+    
+}
+
+.link-main {
+    @extend %link;
+    font-size:22px;
+}
